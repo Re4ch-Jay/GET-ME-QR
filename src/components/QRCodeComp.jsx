@@ -88,8 +88,8 @@ function QRCodeComp() {
                 </div>
                 ) :
                 <div className="flex justify-center items-center">
-                    <Button type={"PNG"} />
-                    <Button type={"JPEG"} />
+                    <Button type={"Download PNG"} />
+                    <Button type={"Download JPEG"} />
                 </div>
                 }
             </div>
