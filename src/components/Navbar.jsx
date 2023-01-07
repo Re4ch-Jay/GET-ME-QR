@@ -11,6 +11,10 @@ function Navbar() {
       document.title = "Get Me QR | About";
     }else if(location.pathname === '/contact') {
       document.title = "Get Me QR | Contact";
+    }else if(location.pathname === '/password') {
+      document.title = "Get Me QR | Home";
+    }else if(location.pathname === '/meme') {
+      document.title = "Get Me QR | Home";
     }else{
       document.title = "Get Me QR | 404";
     }
