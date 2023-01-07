@@ -1,5 +1,6 @@
 import { useState } from "react";
 import QRCode from "react-qr-code";
+import ButtonDownload from "../components/ButtonDownload";
 import Card from "../components/Card";
 import Container from "../components/Container";
 import Hero from "../components/Hero";
@@ -95,15 +96,15 @@ const Home = () => {
                 (
                   <>
                     
-                    <input type="button" value="Download PNG" onClick={() => onImageDownload('png')}  className="my-10 text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" />
+                    <ButtonDownload onImageDownload={onImageDownload} type={"png"} value={'Download PNG'} />
 
-                    <input type="button" value="Download JPEG" onClick={() => onImageDownload('jpeg')}  className="my-10 text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" />
+                    <ButtonDownload onImageDownload={onImageDownload} type={"jpeg"} value={'Download JPEG'} />
                   </>
                 ) :
                   <button type="button" className="mt-16 text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" disabled>Disabled Download</button>
                 }
-                
-                <button type="submit" class="text-white mt-16 bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Generate</button>
+                  
+                  <button type="submit" class="text-white mt-16 bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Generate</button>
                 </form>
             </Card>
             </div>
