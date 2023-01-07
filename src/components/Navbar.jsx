@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 function Navbar() {
   const location = useLocation()
+
+  useEffect(() => {
+    if(location.pathname === '/') {
+      document.title = "Get Me QR | Home";
+    }else if(location.pathname === '/about'){
+      document.title = "Get Me QR | About";
+    }else if(location.pathname === '/contact') {
+      document.title = "Get Me QR | Contact";
+    }else{
+      document.title = "Get Me QR | 404";
+    }
+  }, [location])
+
   console.log(location.pathname)
   return (
     <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
