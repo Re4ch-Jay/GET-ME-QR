@@ -67,7 +67,7 @@ function Password() {
     <div>
         <Hero />
         <Paginate />
-          <Card maxWidth={'500px'} margin={"80px auto"}>
+          <Card id="get-started" maxWidth={'500px'} margin={"80px auto"}>
             <h3 className='mb-10 text-white text-center scale-800 font-extrabold'>Generate your password</h3>
               <textarea id="comment" rows="4" className="w-full px-0 text-sm text-gray-600 bg-white border-0 dark:bg-gray-800 focus:ring-0 dark:text-white dark:placeholder-gray-400" placeholder="Generate password" value={password} disabled></textarea>
               

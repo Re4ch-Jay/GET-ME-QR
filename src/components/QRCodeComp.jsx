@@ -4,13 +4,15 @@ import Button from "./Button";
 import ButtonDownload from "./ButtonDownload";
 import Card from "./Card";
 import Container from "./Container";
+import {CirclePicker } from 'react-color'
 
 function QRCodeComp() {
     const [src, setSrc] = useState('')
     const [size, setSize] = useState(300);
     const [error, setError] = useState('')
-    const [bgcolor, setBgColor] = useState('')
-    const [fgcolor, setFgColor] = useState('')
+    const [bgcolor, setBgColor] = useState('#FFF')
+    const [fgcolor, setFgColor] = useState('#000')
+    
   
     const onImageDownload = (fileType) => {
       const svg = document.getElementById("QRCode");
@@ -56,23 +58,32 @@ function QRCodeComp() {
         <Card>
             <div className="p-10" id="get-started">
                 {error && <div className="mb-5 text-xs text-red-600 dark:text-red-400">{error}</div>}
+                    <p className="mb-10 text-white font-bold">Your Input</p>
                     <input type="url" onChange={e => setSrc(e.target.value)} 
                         className="mb-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="GetMeQR.com"
                     />
+                    
+                    <p className="text-white font-bold">Background Color</p>
 
-                    <input type="text" onChange={e => setBgColor(e.target.value)} 
+                    <input type="text" onChange={e => setBgColor(e.target.value)} value={bgcolor}
                     className="my-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="#FFFFFF default color"
                     />
 
-                    <input type="text" onChange={e => setFgColor(e.target.value)} 
+                    <CirclePicker  color={bgcolor} onChange={updatedColor => setBgColor(updatedColor.hex)} />
+
+                    <p className="mt-10 text-white font-bold">Dots Color</p>
+
+                    <input type="text" onChange={e => setFgColor(e.target.value)} value={fgcolor}
                     className="my-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="#000000 default color" 
                     />
 
+                    <CirclePicker  color={fgcolor} onChange={updatedColor => setFgColor(updatedColor.hex)} />
+
                     <select id="size" onChange={e => setSize(e.target.value)} 
-                        className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        className="mt-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     >
                         <option value="300">Size: 300px x 300px</option>
                         <option value="400">Size: 400px x 400px</option>
@@ -87,10 +98,10 @@ function QRCodeComp() {
                     <ButtonDownload onImageDownload={onImageDownload} type={"jpeg"} value={'Download JPEG'} />
                 </div>
                 ) :
-                <div className="flex justify-center items-center">
-                    <Button type={"Download PNG"} />
-                    <Button type={"Download JPEG"} />
-                </div>
+                    <li class="flex items-center max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400 mt-10">
+                        <svg class="w-4 h-4 mr-1.5 text-gray-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                        Input at least a character to download
+                    </li>
                 }
             </div>
         </Card>
