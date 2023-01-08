@@ -11,7 +11,7 @@ function Contact() {
     setFaq(faq => !faq)
   }
   return (
-    <>
+    <div className='my-10'>
     <Card maxWidth={'1000px'} margin={'0 auto'}>
       <h1 className='text-white font-extrabold'>Contact Us</h1>
       <p className='text-gray-400'>If you have any questions or concerns, please fill out the form below and our team will reach out to you within a few hours.</p>
@@ -48,7 +48,7 @@ function Contact() {
         <PasswordAccordion/>
       </>
     )}
-    </>
+    </div>
   )
 }
 
