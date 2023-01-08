@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Meme from "./components/Meme";
 import Navbar from "./components/Navbar";
 import Password from "./components/Password";
@@ -15,7 +16,8 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className={toggleMode ? "App bg-white dark:bg-gray-900" : "App bg-white text-dark"}>
+      <div className={toggleMode ? "App bg-white dark:bg-gray-900 scroll-smooth" : "App bg-white text-dark scroll-smooth"}>
+        <Header />
         <Navbar/> 	
         <Routes>
           <Route path="/" element={<Home />} />
