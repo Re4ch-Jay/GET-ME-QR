@@ -2,9 +2,9 @@ import { useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Meme from "./components/Meme";
 import Navbar from "./components/Navbar";
 import Password from "./components/Password";
+import QRCodeReader from "./components/QRCodeReader";
 import { ThemeContext } from "./Contexts/ThemeContext";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -24,7 +24,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/password" element={<Password />} />
-          <Route path="/meme" element={<Meme />} />
+          <Route path="/scan" element={<QRCodeReader />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
         <Footer/>

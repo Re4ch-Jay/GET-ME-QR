@@ -26,7 +26,7 @@ function QRCodeComp() {
         ctx.drawImage(img, 0, 0);
         const file = canvas.toDataURL("image/"+fileType);
         const downloadLink = document.createElement("a");
-        downloadLink.download = "GetMeQR_"+src;
+        downloadLink.download = "getmeqr";
         downloadLink.href = `${file}`;
         downloadLink.click();
       };
