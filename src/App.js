@@ -16,7 +16,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className={toggleMode ? "App bg-white bg-gray-900 scroll-smooth" : "App bg-white text-dark scroll-smooth"}>
+      <div className={!toggleMode ? "App bg-white bg-gray-900 scroll-smooth" : "App bg-white text-dark scroll-smooth"}>
         <Header />
         <Navbar/> 	
         <Routes>

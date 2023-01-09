@@ -24,7 +24,7 @@ function QRAccordion() {
   return (
     <>
     <div className='flex justify-center items-center text-center my-10'>
-        <h6 className={toggleMode ? "max-w-21xl mb-4 text-4xl font-bold md:text-1xl xl:text-3xl text-white" : "max-w-21xl mb-4 text-4xl font-bold md:text-1xl xl:text-3xl" }>Basic information about QR Code generator</h6>
+        <h6 id='text-faq' className={!toggleMode ? "max-w-21xl mb-4 text-4xl font-bold md:text-1xl xl:text-3xl text-white" : "max-w-21xl mb-4 text-4xl font-bold md:text-1xl xl:text-3xl" }>Basic information about QR Code generator</h6>
     </div>
         <div className='flex gap-12 justify-center items-center flex-wrap' >
         <button onClick={handleClickAboutBasics} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white">

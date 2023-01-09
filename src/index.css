@@ -23,6 +23,9 @@ button:disabled {
     width: 400px; 
     height: 400px;
   }
+  #text-faq {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 776px) {
@@ -33,6 +36,9 @@ button:disabled {
     width: 350px; 
     height: 350px;
   } 
+  #text-faq {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -40,4 +46,7 @@ button:disabled {
     width: 300px; 
     height: 300px;
   } 
+  #text-faq {
+    font-size: 18px;
+  }
 }
