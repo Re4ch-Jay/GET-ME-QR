@@ -15,7 +15,7 @@ function Navbar() {
       document.title = "Get Me QR | Contact";
     }else if(location.pathname === '/password') {
       document.title = "Get Me QR | Home";
-    }else if(location.pathname === '/meme') {
+    }else if(location.pathname === '/scan') {
       document.title = "Get Me QR | Home";
     }else{
       document.title = "Get Me QR | 404";
@@ -41,7 +41,7 @@ function Navbar() {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white bg-gray-800 md:bg-gray-900 border-gray-700">
             <li>
-            <Link to="/" className={location.pathname === '/' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'} aria-current="page">Home</Link>
+            <Link to="/" className={location.pathname === '/' || location.pathname === "/scan" || location.pathname === '/password' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'} aria-current="page">Home</Link>
             </li>
             <li>
             <Link to="/about" className={location.pathname === '/about' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'}>About Dev</Link>

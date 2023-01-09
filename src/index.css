@@ -15,8 +15,29 @@ button:disabled {
   padding: 40px 20px;
 }
 
+@media screen and (max-width: 1020px) {
+  #ceo {
+    flex: 1;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px; 
+    height: 400px;
+  }
+}
+
 @media screen and (max-width: 776px) {
   .container {
     flex-direction: column;
   }
+  #ceo {
+    width: 350px; 
+    height: 350px;
+  } 
+}
+
+@media screen and (max-width: 420px) {
+  #ceo {
+    width: 300px; 
+    height: 300px;
+  } 
 }
