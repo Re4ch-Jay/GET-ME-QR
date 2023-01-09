@@ -24,18 +24,18 @@ function QRAccordion() {
   return (
     <>
     <div className='flex justify-center items-center text-center my-10'>
-        <h6 className={toggleMode ? "max-w-21xl mb-4 text-4xl font-bold md:text-1xl xl:text-3xl dark:text-white" : "max-w-21xl mb-4 text-4xl font-bold md:text-1xl xl:text-3xl" }>Basic information about QR Code generator</h6>
+        <h6 className={toggleMode ? "max-w-21xl mb-4 text-4xl font-bold md:text-1xl xl:text-3xl text-white" : "max-w-21xl mb-4 text-4xl font-bold md:text-1xl xl:text-3xl" }>Basic information about QR Code generator</h6>
     </div>
         <div className='flex gap-12 justify-center items-center flex-wrap' >
-        <button onClick={handleClickAboutBasics} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        <button onClick={handleClickAboutBasics} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white">
             Basics
         </button>
 
-        <button onClick={handleClickAboutDesign} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        <button onClick={handleClickAboutDesign} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white">
             Design QR Code
         </button>
 
-        <button onClick={handleClickAboutDownload} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+        <button onClick={handleClickAboutDownload} className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 hover:text-gray-700 bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700 hover:text-white">
             Download QR code
         </button>
         </div>
