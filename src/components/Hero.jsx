@@ -13,7 +13,7 @@ function Hero() {
                 </h1>
                 <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-blue-600">               
                  <Typical
-                    steps={['QR Code', 2000, 'Password', 2000, 'Meme', 2000]}
+                    steps={['QR Code', 2000, 'QR Scanner', 2000, 'Password', 2000]}
                     loop={Infinity}
                     wrapper="h1"
                 />
