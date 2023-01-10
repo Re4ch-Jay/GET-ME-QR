@@ -69,7 +69,7 @@ function Password() {
         <Paginate />
           <Card id="get-started" maxWidth={'500px'} margin={"80px auto"}>
             <h3 className='mb-10 text-white text-center scale-800 font-extrabold'>Generate your password</h3>
-              <textarea id="comment" rows="4" className="w-full px-0 text-sm text-gray-600 bg-white border-0 bg-gray-800 focus:ring-0 text-white placeholder-gray-400" placeholder="Generate password" value={password} disabled></textarea>
+              <textarea id="comment" rows="4" className="w-full px-0 text-sm bg-white border-0 bg-gray-800 focus:ring-0 text-white placeholder-gray-400" placeholder="Generate password" value={password} disabled></textarea>
               
                     <input type="number" 
                         className="mb-10 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import QRCode from "react-qr-code";
-import Button from "./Button";
 import ButtonDownload from "./ButtonDownload";
 import Card from "./Card";
 import Container from "./Container";

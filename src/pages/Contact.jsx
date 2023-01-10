@@ -3,6 +3,7 @@ import Card from '../components/Card'
 import Button from '../components/Button'
 import QRAccordion from '../components/Accordion/QR Code/QRAccordion'
 import PasswordAccordion from '../components/Accordion/Password/PasswordAccordion'
+import Social from '../components/Social'
 
 function Contact() {
   const [faq, setFaq] = useState(false)
@@ -37,7 +38,7 @@ function Contact() {
           <textarea id="message" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
 
         </div>
-       
+        <Social />
         <Button type={'Send Message'} /> 
         <Button type={'FAQ'} handleGenerate={handleClick} /> 
       </form>

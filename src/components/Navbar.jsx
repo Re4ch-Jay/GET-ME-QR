@@ -71,13 +71,13 @@ function Navbar() {
 
         {modalOpen && <div className="w-full md:block md:w-auto">
         <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white bg-gray-800 md:bg-gray-900 border-gray-700">
-            <li>
+            <li onClick={() => setModalOpen(false)}>
             <Link to="/" className={location.pathname === '/' || location.pathname === "/scan" || location.pathname === '/password' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'} aria-current="page">Home</Link>
             </li>
-            <li>
+            <li onClick={() => setModalOpen(false)}>
             <Link to="/about" className={location.pathname === '/about' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'}>About Dev</Link>
             </li>
-            <li>
+            <li onClick={() => setModalOpen(false)}>
             <Link to="/contact" className={location.pathname === '/contact' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'}>Contact</Link>
             </li>
 

@@ -3,7 +3,7 @@ import { useState } from "react"
 function AboutSecure() {
     const [accordion1, setAccordion1] = useState(false);
     const [accordion2, setAccordion2] = useState(false);
-    const [accordion3, setAccordion3] = useState(false);
+
     
 
     const handleClickAccordion1 = (id) => {
@@ -12,7 +12,7 @@ function AboutSecure() {
         )
 
         setAccordion2(false);
-        setAccordion3(false)
+
     }
 
     const handleClickAccordion2 = () => {
@@ -20,15 +20,7 @@ function AboutSecure() {
             !accordion2
         )
         setAccordion1(false);
-        setAccordion3(false)
-    }
-
-    const handleClickAccordion3 = () => {
-        setAccordion3(() => 
-            !accordion3
-        )
-        setAccordion2(false);
-        setAccordion1(false)
+  
     }
    
   return (
