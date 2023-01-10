@@ -106,8 +106,8 @@ function Password() {
                         </li>
                     </ul>
                     {error && <div className='text-red-400 my-5'>{error}</div>}
-              <Button type={"Generate"} handleGenerate={handleGenerate}/>
-              {password && <Button copyToClipboard={copyToClipboard()} type="Copy " />}
+              <Button type={'submit'} title={"Generate"} handleGenerate={handleGenerate}/>
+              {password && <Button copyToClipboard={copyToClipboard()} title="Copy" />}
           </Card>
           
           <VerifyPassword />
