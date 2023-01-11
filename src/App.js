@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ADS from "./components/ADS";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -27,6 +28,7 @@ function App() {
           <Route path="/scan" element={<QRCodeReader />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
+        <ADS/>
         <Footer/>
       </div>
     </BrowserRouter>
