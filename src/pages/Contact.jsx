@@ -69,7 +69,7 @@ function Contact() {
         )}
 
         <Button type={'submit'} title={'Send Message'} /> 
-        <Button title={'FAQ'} handleGenerate={handleClick} /> 
+        <Button type={"button"}  title={'FAQ'} handleGenerate={handleClick} /> 
         
       </form>
     </Card>

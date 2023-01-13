@@ -52,9 +52,9 @@ function Navbar() {
             <li>
             <Link to="/" className={location.pathname === '/' || location.pathname === "/scan" || location.pathname === '/password' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'} aria-current="page">Home</Link>
             </li>
-            <li>
+            {/* <li>
             <Link to="/about" className={location.pathname === '/about' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'}>About Dev</Link>
-            </li>
+            </li> */}
             <li>
             <Link to="/contact" className={location.pathname === '/contact' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'}>Contact</Link>
             </li>
@@ -74,9 +74,9 @@ function Navbar() {
             <li onClick={() => setModalOpen(false)}>
             <Link to="/" className={location.pathname === '/' || location.pathname === "/scan" || location.pathname === '/password' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'} aria-current="page">Home</Link>
             </li>
-            <li onClick={() => setModalOpen(false)}>
+            {/* <li onClick={() => setModalOpen(false)}>
             <Link to="/about" className={location.pathname === '/about' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'}>About Dev</Link>
-            </li>
+            </li> */}
             <li onClick={() => setModalOpen(false)}>
             <Link to="/contact" className={location.pathname === '/contact' ? `block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:p-0 text-white md:text-blue-700` : 'block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 text-gray-400 md:hover:text-white hover:bg-gray-700 hover:text-white md:hover:bg-transparent'}>Contact</Link>
             </li>
