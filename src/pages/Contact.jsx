@@ -20,7 +20,7 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_nbr6i0s', 'template_ja62v9o', form.current, 'c_u6-urCZFihNSh8B')
+    emailjs.sendForm(process.env.REACT_APP_EMAIL_SEVICE, process.env.REACT_APP_EMAIL_TEMPLATE , form.current, process.env.REACT_APP_EMAIL_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
           setMessage("Message send successfully! Thank you for your message. We will reply to you as soon as possible")
